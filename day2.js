@@ -37,11 +37,15 @@
 
 
 
-let btn=document.getElementsByClassName("btn btn-primary my-2")
-let image =document.getElementById("image")
-btn.addEventListener(click,function())
-{
-    fetch("")
+var members = ["John Doe", "Sam Smith", "Allie Cartel"];
 
-
+function addNewMember(newUser) {
+  members.push(newUser);
 }
+
+function getAllMembers() {
+  console.log(members);
+}
+
+addNewMember("sweta");
+getAllMembers();
